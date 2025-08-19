@@ -1,0 +1,29 @@
+tipos de datos en firebase: string, boolean, numbre, map (conjunto de array), array, null, timestamp (tiempo), geopoint (posicion), reference (url).
+
+await:
+
+async: validacion de datos de forma asincronica
+
+useEffect: contextualiza o verifica que lo que tenga cargado en mi sistema este en mi base de datos
+
+child, children es la herencia
+
+setPersistence (firebase.jsx): deja un registro en firebase de los registros de los usuarios
+
+browserLocalPersistence (firebase.jsx): sqlPersistence, si se corta la conexion a la base de datos y se estaba enviando un paquete se reanuda el envio con la reconexion
+
+	//Exportar Auth
+	export const auth = getAuth(app);
+
+	// Mantiene la sesion activa	
+	setPersistence(auth, browserLocalPersistence);
+
+	//Provedor de goolgr
+	export const googleProvider = new GoogleAuthProvider();
+
+	// Provee analiticas del sistema
+	const analytics = getAnalytics(app);
+ 
+
+
+		MATERIAL UI
